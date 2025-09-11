@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.text{
+    color: rgb(255, 179, 179);
+}
+
+.parallax {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+.parallax.section1 {
+  background-image: url('https://s.isanook.com/ca/0/ud/276/1380909/12819163_1218908548133170_3770585045157720629_o-768x480.jpg');
+}
+
+.parallax.section3 {
+  background-image: url('https://cms.kapook.com/uploads/tag/1/ID_923_56f515f7eb9e3.jpg');
+}
+
+.parallax .text {
+  position: relative;
+  z-index: 1;
+}
+
+.section2 {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
