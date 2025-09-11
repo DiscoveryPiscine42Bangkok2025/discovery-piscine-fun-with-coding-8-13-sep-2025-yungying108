@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ptrisang</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(255, 0, 0);
+            border-radius: 50%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="balloon">
+    </div>
+</body>
+<script>
+        let balloon = document.getElementById("balloon");
+        let size = 200;
+        let lowsize = 200;
+        let fullsize = 420;
+        let color = ['red','green','blue'];
+        let index = 0;
+        function shrink(){
+            size = Math.max(size-5,lowsize);
+            balloon.style.width = size + 'px';
+            balloon.style.height = size + 'px';
+            index = (index - 1)%3;
+            if (index < 0){
+                index = 2;
+            }
+            balloon.style.backgroundColor = color[index];
+        }
+        function expand(){
+            size += 10;
+            index = (index + 1)%3;
+            if (size > fullsize){
+                size = lowsize;
+            }
+            balloon.style.backgroundColor = color[index];
+            balloon.style.width = size + 'px';
+            balloon.style.height = size + 'px';
+        }
+        
+        balloon.addEventListener("click",expand);
+        balloon.addEventListener("mouseleave",shrink);
+        
+    </script>
+</html>
