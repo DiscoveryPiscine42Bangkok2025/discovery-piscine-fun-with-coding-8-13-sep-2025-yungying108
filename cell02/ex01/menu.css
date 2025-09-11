@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 50px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+select {
+  padding: 10px 14px;
+  font-size: 16px;
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-size: 15px;
+}
+
+#Sugracandy {
+  background-color: #65d3ad;
+  color: #3a2600;
+}
+#Toffee {
+  background-color: #8ad58c;
+  color: #3a0e1a;
+}
+#Cottoncandy {
+  background-color: #7aaece;
+  color: #3a2a00;
+}
+#Lollipop {
+  background-color: #a591e7;
+  color: #003300;
+}
+#Caramel {
+  background-color: #e186be;
+  color: #2f1600;
+}
