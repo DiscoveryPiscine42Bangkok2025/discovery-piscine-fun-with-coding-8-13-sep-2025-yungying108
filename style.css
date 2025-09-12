@@ -22,6 +22,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  background-image: url("https://thumb.photo-ac.com/f1/f1bf2726bdbeec7fa625474f2c616f81_t.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .welcome-container {
